@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rok Your TV</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17040659159"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17040659159');
+  </script>
+
+  <style>
+    /* Hero Section */
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+
+    /* Optional dark overlay */
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      max-width: 90%;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #e50914;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #b00610;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+
+      .hero-button {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand-name">
+        <a href="index.html">RokYour <span>TV</span></a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+    });
+  </script>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="RokyourTV.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Unleash the Power of Streaming. Anytime. Anywhere.</h1>
+      <p>Discover a world of non-stop entertainment with RokYour TV — movies, shows, and live channels right at your
+        fingertips. No limits. No contracts. Just pure streaming freedom. <br> +1(844) 260-7585</p>
+      <a href="tel:+18883304118" class="hero-button">Get Started</a>
+    </div>
+  </section>
+
+  <section class="devices-section">
+    <div class="container">
+      <h2 class="section-title">Explore Our Devices</h2>
+      <div class="devices-grid">
+        <div class="device-card">
+          <img
+            src="https://img1.wsimg.com/isteam/ip/6e72d04d-0266-4cc5-adcd-684211c4c3c9/%2Ciujytgrfd.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
+            alt="TV">
+          <h3>TV</h3>
+        </div>
+        <div class="device-card">
+          <img
+            src="https://img1.wsimg.com/isteam/ip/6e72d04d-0266-4cc5-adcd-684211c4c3c9/unybtvfr.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
+            alt="Player">
+          <h3>Player</h3>
+        </div>
+        <div class="device-card">
+          <img
+            src="https://img1.wsimg.com/isteam/ip/6e72d04d-0266-4cc5-adcd-684211c4c3c9/l%2Cimkujn.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
+            alt="Sound">
+          <h3>Sound</h3>
+        </div>
+        <div class="device-card">
+          <img
+            src="https://img1.wsimg.com/isteam/ip/6e72d04d-0266-4cc5-adcd-684211c4c3c9/dcexs.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
+            alt="Smart Home">
+          <h3>Smart Home</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="welcome-section">
+    <div class="welcome-wrapper">
+      <div class="welcome-img">
+        <img
+          src="https://img1.wsimg.com/isteam/ip/6e72d04d-0266-4cc5-adcd-684211c4c3c9/etrctvf-6f707fd.webp/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:600,h:300,cg:true"
+          alt="Streaming Poster">
+      </div>
+      <div class="welcome-content">
+        <h2>Welcome To Rok Your TV</h2>
+        <p>
+          Rok Your TV connects you to top internet, TV, streaming, and phone services — all in one place.
+          We simplify the process, compare the best providers for you, and make setup fast and hassle-free.
+          Trusted, transparent, and built for your convenience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 6h18v2H3zm0 4h18v2H3zm0 4h12v2H3z" />
+          </svg>
+          <h3>Live TV Access</h3>
+          <p>1000+ channels including news, sports & local networks.</p>
+        </div>
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 8v8l6-4-6-4zm12-4v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2z" />
+          </svg>
+          <h3>On-Demand Movies</h3>
+          <p>Stream movies and series anytime on any device.</p>
+        </div>
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-1h4v1h-4zm4-3h-4v-5h4v5z" />
+          </svg>
+          <h3>Kids & Family</h3>
+          <p>Fun, safe, educational content for children of all ages.</p>
+        </div>
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 3h18v2H3zm0 14h18v2H3zm0-7h18v2H3z" />
+          </svg>
+          <h3>International Channels</h3>
+          <p>Watch channels from the US, UK, India, and more.</p>
+        </div>
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12c0 4.63 3.14 8.49 7.38 9.62.54.1.74-.23.74-.5 0-.25-.01-.92-.01-1.8-3 .65-3.63-1.45-3.63-1.45-.49-1.23-1.21-1.56-1.21-1.56-.99-.68.08-.66.08-.66 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.57 1.19 3.2.91.1-.71.39-1.19.7-1.46-2.39-.27-4.92-1.19-4.92-5.3 0-1.17.42-2.13 1.1-2.88-.11-.27-.48-1.37.1-2.86 0 0 .9-.29 2.95 1.1A10.28 10.28 0 0 1 12 6.8c.92.01 1.85.13 2.72.37 2.05-1.39 2.95-1.1 2.95-1.1.58 1.49.21 2.59.1 2.86.68.75 1.1 1.71 1.1 2.88 0 4.12-2.54 5.02-4.95 5.28.4.35.75 1.03.75 2.08 0 1.5-.01 2.71-.01 3.08 0 .28.2.61.75.5C18.87 20.49 22 16.63 22 12c0-5.52-4.48-10-10-10z" />
+          </svg>
+          <h3>Easy Setup</h3>
+          <p>Plug-and-play support with 24/7 assistance.</p>
+        </div>
+        <div class="service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z" />
+          </svg>
+          <h3>Affordable Plans</h3>
+          <p>Pay less for more. No contracts. No hidden fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect-section">
+    <div class="connect-container">
+      <div class="connect-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTFEHk2-Jkeyz_mFlm4S2Pe5fmNwtqlNPAA&s"
+          alt="TV Content Promo">
+      </div>
+      <div class="connect-content">
+        <h2>Connecting You to What Matters Most</h2>
+        <p>
+          Enjoy ultra-fast internet and crystal-clear cable TV tailored for your home or business.
+          With flexible plans, 24/7 support, and unbeatable reliability, Rok Your TV keeps you connected
+          so you can stream, work, and play without limits.
+        </p>
+        <div class="connect-stats">
+          <div class="stat">
+            <h3>99%</h3>
+            <p>Network Reliability</p>
+          </div>
+          <div class="stat">
+            <h3>24/7</h3>
+            <p>Customer Support</p>
+          </div>
+          <div class="stat">
+            <h3>1000+</h3>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+        <a href="tel:+18442607585" class="hero-btn">Call Now</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2 class="cta-heading">Ready to experience the future of streaming?</h2>
+      <p class="cta-subtext">
+        Get connected with Rok Your TV and explore blazing-fast internet, unbeatable plans, and 24/7 support.
+      </p>
+      <a href="tel:+18442607585" class="hero-btn">Contact Us </a>
+
+    </div>
+  </section>
+
+
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <p class="faq-subtext">Here are some of the most common questions our customers ask.</p>
+      <div class="faq-grid">
+
+        <div class="faq-item">
+          <div class="faq-icon">❓</div>
+          <div>
+            <h3>What services does Rok Your TV offer?</h3>
+            <p>
+              We offer a range of connectivity and streaming solutions including internet, TV bundles,
+              and on-demand content — all with affordable pricing and fast setup.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">🌐</div>
+          <div>
+            <h3>Which providers are available?</h3>
+            <p>
+              We work with top-tier providers including AT&T, Verizon, Xfinity, HughesNet, and more.
+              Our team helps you choose the best fit for your location and budget.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">🏢</div>
+          <div>
+            <h3>Is Rok Your TV a provider?</h3>
+            <p>
+              No, we’re an authorized dealer that connects you with leading service providers and
+              manages your installation and support process.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">💸</div>
+          <div>
+            <h3>Are there setup or activation charges?</h3>
+            <p>
+              Yes, our service execution charges range from ₹499 to ₹1499 depending on plan type and
+              provider. These cover connection, support, and account management.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-icon">🧾</div>
+          <div>
+            <h3>Why separate billing from the provider?</h3>
+            <p>
+              Since we manage service execution independently, our charges are billed separately from
+              your provider's regular internet or TV charges.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">📞</div>
+          <div>
+            <h3>How can I contact support?</h3>
+            <p>
+              You can contact us through the website contact form or call our 24/7 support line for
+              troubleshooting, plan changes, or new service setup.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Reach Out To Rok Your TV</h2>
+        <form action="#">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+          <textarea name="message" rows="5" placeholder="Your Message (Optional)"></textarea>
+          <a href="tel:+18883304118" class="call-button"> Submit</a>
+        </form>
+      </div>
+      <div class="contact-image">
+        <img src="https://tinuiti.com/wp-content/uploads/2023/02/50-Streaming-Statistics.webp" alt="Streaming Grid">
+        <div class="contact-overlay">
+          <p><strong>📞+1 (844) 260-7585</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="disclaimer-section">
+    <div class="disclaimer-container">
+      <h3>Disclaimer</h3>
+      <p>
+        The information provided on this website is for general informational purposes only. Rok Your TV makes
+        no guarantees or warranties of any kind, express or implied, regarding the accuracy, completeness,
+        or reliability of services listed. Your use of this site and its content is entirely at your own risk.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+
+
+    </div>
+    <p class="footer-copy">© 2025 Rok Your TV. All rights reserved.</p>
+  </footer>
+
+
+
+</body>
+
+</html>
